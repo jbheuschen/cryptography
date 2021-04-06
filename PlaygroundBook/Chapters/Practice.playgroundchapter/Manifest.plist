@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>The Practice: Writing an E2EE-Chat-App</string>
+	<key>Pages</key>
+	<array>
+		<string>E2EImplementation.playgroundpage</string>
+		<string>Exercise.playgroundpage</string>
+		<string>IntroChat.playgroundpage</string>
+		<string>KeyExchange.playgroundpage</string>
+		<string>UI.playgroundpage</string>
+	</array>
+</dict>
+</plist>
