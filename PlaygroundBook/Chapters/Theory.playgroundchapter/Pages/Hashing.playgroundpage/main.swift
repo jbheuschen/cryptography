@@ -53,6 +53,10 @@ func hash(file path: String) -> SHA512Digest {
 
 /*:
  
+ #### Checksums
+ 
+ Checksums are a very important tools helping us to verify a file's integrity, for instance, after downloading it from the internet. Checksums' algorithms usually heavily rely on traditional hashing algorithms.
+ 
  ### Try it
  Enter a string you want to hash using the *SHA-512* algorithm. Then click run to see the result.
  */
@@ -63,10 +67,11 @@ print(stringify(hash(s)))
 
 /*:
  ### Example
- By running this playground, you can try out an interactive tool for hashes.
+ By running this playground, you can try out an interactive tool for hashes. Tip: using the folder icon, you can try file hashing, too!
  */
 
 import SwiftUI
+import UniformTypeIdentifiers
 import PlaygroundSupport
 
 extension String {
@@ -96,6 +101,8 @@ extension String {
 struct Example : View {
     
     @State var string: String = ""
+    @State var file: String?
+    @State var isImporting: Bool = false
     
     var body: some View {
         NavigationView {
@@ -148,11 +155,51 @@ struct Example : View {
             }
             .padding()
             .navigationBarTitle("Hashing")
-        }
+            .navigationBarItems(trailing: Button(action: {
+                self.isImporting = true
+            }, label: {
+                Image(systemName: "folder")
+            })
+            .sheet(item: $file) { file in
+                NavigationView {
+                    Text(file)
+                        .navigationBarTitle("File Hash", displayMode: .inline)
+                        .padding()
+                }
+            })
+            .fileImporter(isPresented: $isImporting, allowedContentTypes: [.text, .image, .archive, .application, .audio]) {
+                switch $0 {
+                case .success(let url):
+                    guard let data = try? Data(contentsOf: url) else { return }
+                    self.file = SHA512.hash(data: data).compactMap { String(format: "%02x", $0) }.joined()
+                case .failure(_):
+                    break
+                }
+            }        }
         .navigationViewStyle(StackNavigationViewStyle())
     }
     
 }
+
+//#-hidden-code
+extension String : Identifiable {
+    
+    public var id: Int {
+        self.hash
+    }
+    
+}
+
+extension Data : Identifiable {
+    
+    public var id: Int {
+        self.hashValue
+    }
+    
+}
+//#-end-hidden-code
+
+
 
 /*:
  ### Conclusion
@@ -165,6 +212,7 @@ struct Example : View {
  - A hashing algorithm always produces a hash of the same lenght (e.g., SHA-512 => 512 bits).
  */
 
+//#-hidden-code
 PlaygroundPage.current.setLiveView(Example())
-
+//#-end-hidden-code
 //: [Next](@next)
