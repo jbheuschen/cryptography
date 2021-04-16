@@ -5,9 +5,12 @@ import CryptoKit
 import SwiftUI
 import PlaygroundSupport
 
-import E2E
+let me = Participant["Bob"], me2 = Participant["Alice"]
 
-let me = Participant["Julian"], me2 = Participant["Benjamin"]
+/*:
+ # Our UI
+ Our UI will be a simple SwiftUI layout. The screen will be divided into an upper and a lower half, both displaying an independent Chat App. These two will represent two different people and are connected to each other, so that we can use the upper one to chat with the lower one.
+ */
 
 struct ChatApp : View {
     
@@ -47,14 +50,13 @@ struct ChatItem : View {
     
     var body: some View {
         NavigationLink(destination: ChatView(chat: chat)) {
-        HStack {
-            Image(systemName: "person")
-            VStack(alignment: .leading) {
-                Text(chat.participants.1.getIdentity())
-                Text(chat.messages.last?.1 ?? "No messages.")
-                    .foregroundColor(.gray)
+            HStack {
+                Image(systemName: "person")
+                VStack(alignment: .leading) {
+                    Text(chat.participants.1.getIdentity())
+                        .font(.callout)
+                }
             }
-        }
         }
     }
     
@@ -69,12 +71,15 @@ struct ChatView : View {
             Spacer()
             VStack {
                 ScrollView {
-                    ForEach(chat.messages, id: \.1) { msg in
+                    ForEach(chat.messages, id: \.1.uniquified) { msg in
                         HStack {
                             Text(msg.0.name)
                                 .foregroundColor(.gray)
+                            Spacer()
                             Text(msg.1)
+                                .italic()
                         }
+                        .padding(.horizontal)
                     }
                 }
             }
@@ -93,10 +98,23 @@ struct ChatView : View {
     
 }
 
+extension String {
+    
+    var uniquified: String {
+        self + UUID().uuidString
+    }
+    
+}
+
+/*:
+ # In detail: How can we guarantee independence between the two distinct subapps?
+ In order to enable communication between the two imaginary persons, both halfs are connected with each other so that you can use the upper one to chat with the lower one. Whereas in a real-world scenario we would communicate via a network, this is obviously not applicable in this case. However, all communication between the two is performed using the _NotificationCenter_, that is, there is no direct programmatic connection between the two.
+ The _NotificationCenter_ therefore simulates the network connection - theoretically, everyone can receive everyone's messages, but they are encrypted...
+ */
 
 
-
-
+//#-hidden-code
 PlaygroundPage.current.setLiveView(ChatApp())
+//#-end-hidden-code
 
 //: [Next](@next)

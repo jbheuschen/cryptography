@@ -37,7 +37,7 @@ func generateKeys() -> Keypair {
 }
 
 /*:
- In a practical example we'd now be publishing our public key. To keep things simple at this point, we'll simply use two local keypairs.
+ In a practical example, we would now be publishing our public key. To keep things simple at this point, we'll simply use two local keypairs.
  ## Encrypting
  When it comes to encrypting a message, we first have to get a symmetric key from our public key using the key agreement with the recipient. Yes, that's right - asymmetric encryption indirectly utilizes symmetric encryption. But how can we do that? Well...
  */

@@ -18,10 +18,10 @@ import Foundation
  
  In theory, the signature creation process is fairly simple:
  
- - Each party has a keypair (which are usually different than those used for encryption, but principally the same as explained for asymmetric encryption)
+ - Each party has a keypair (which are usually different than those used for encryption, but principally the same as explained for asymmetric encryption).
  - The data to be signed is fed into a hashing algorithm which produces a unique hash for it.
- - The hash is then, together with the signature key, fed into a signature algorithm thus creating the actual signature
- - The signature is appended to the actual message (which can after or before being signed also be encrypted)
+ - The hash is then, together with the signature key, fed into a signature algorithm thus creating the actual signature.
+ - The signature is appended to the actual message (which can either after or before being signed be encrypted, too.).
  
  The recipient can now verify the signature in the following way:
  
@@ -64,4 +64,19 @@ func verify(signature: Data, forData data: Data, withKey key: PublicKey) -> Bool
 /*:
  As you can see, everything that seems kind of complicated in the theoretic section is taken over for us by CryptoKit. Isn't that wonderful?
  */
+
+import SwiftUI
+import PlaygroundSupport
+
+struct Example : View {
+    
+    var body: some View {
+        VStack {
+            
+        }
+    }
+    
+}
+
+PlaygroundPage.current.setLiveView(Example())
 //: [Next](@next)

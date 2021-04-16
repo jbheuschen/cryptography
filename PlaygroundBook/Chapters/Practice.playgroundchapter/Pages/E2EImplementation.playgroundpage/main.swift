@@ -14,7 +14,7 @@ import CryptoKit
 public class Participant {
     
     /*
-     These'll make it easier for us later on as we're in a showcase scenario.
+     These'll make it easier for us later on :)
      */
     public static let all: [Participant] = {
         [Participant["Julian"], Participant["Mario"], Participant["Regina"], Participant["Benjamin"]]

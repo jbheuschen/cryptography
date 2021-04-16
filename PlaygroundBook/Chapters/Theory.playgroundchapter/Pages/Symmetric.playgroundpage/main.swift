@@ -2,7 +2,6 @@
 
 import Foundation
 import CryptoKit
-import E2E
 
 enum E : Error {
     case generic(String)
@@ -180,6 +179,8 @@ struct DecryptionExample : View {
     
 }
 
+//#-hidden-code
 PlaygroundPage.current.setLiveView(Example())
+//#-end-hidden-code
 
 //: [Next](@next)

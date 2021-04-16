@@ -11,7 +11,7 @@ public typealias Keypair = (publicKey: PublicKey, privateKey: PrivateKey)
 public let protocolSalt = "SALT".data(using: .utf8)!
 
 public func generateKeys() -> Keypair {
-    let privateKey = P521.KeyAgreement.PrivateKey()
+    let privateKey = PrivateKey()
     return (privateKey.publicKey, privateKey)
 }
 
@@ -64,7 +64,7 @@ public class KeyExchange {
 public class Participant {
     
     public static let all: [Participant] = {
-        [Participant["Julian"], Participant["Mario"], Participant["Regina"], Participant["Benjamin"]]
+        [Participant["Bob"], Participant["Alice"], Participant["Eve"], Participant["Julia"]]
     }()
     
     public static func all(without: Participant...) -> [Participant] {

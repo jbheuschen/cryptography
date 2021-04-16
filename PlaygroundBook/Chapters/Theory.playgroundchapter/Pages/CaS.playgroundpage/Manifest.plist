@@ -9,6 +9,6 @@
 	<key>LiveViewEdgeToEdge</key>
 	<true/>
 	<key>LiveViewMode</key>
-	<string>VisibleByDefault</string>
+	<string>HiddenByDefault</string>
 </dict>
 </plist>
