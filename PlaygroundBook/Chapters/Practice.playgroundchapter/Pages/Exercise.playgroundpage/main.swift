@@ -86,3 +86,9 @@ class Solution : ExerciseA {
     }
     
 }
+
+/*:
+ # The End
+ 
+ You've reached the end of my playground. I hope I was able to teach you something (you didn't know yet) about Cryptography. Moreover, I hope I was able to let you take part in my enthusiasm for computer science in general, and Swift in particular! Thanks for taking time to read through this playground :)
+ */

@@ -2,6 +2,7 @@
 
 import Foundation
 import CryptoKit
+import E2E
 
 enum E : Error {
     case generic(String)

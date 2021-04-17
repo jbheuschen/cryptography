@@ -113,4 +113,9 @@ extension String {
  The _NotificationCenter_ therefore simulates the network connection - theoretically, everyone can receive everyone's messages, but they are encrypted...
  */
 
+
+//#-hidden-code
+PlaygroundPage.current.setLiveView(ChatApp())
+//#-end-hidden-code
+
 //: [Next](@next)

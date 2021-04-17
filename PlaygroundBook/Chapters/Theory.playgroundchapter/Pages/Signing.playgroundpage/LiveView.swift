@@ -138,4 +138,5 @@ struct Example : View {
     
 }
 
+PlaygroundPage.current.setLiveView(Example())
 //: [Next](@next)

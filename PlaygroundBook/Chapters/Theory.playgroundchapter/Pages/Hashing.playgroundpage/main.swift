@@ -204,7 +204,7 @@ extension Data : Identifiable {
 /*:
  ### Conclusion
  
- As you can see, every string, even an empty one, produces it's own unique hash. Modifying the string ever so slightly usually results in a totally different hash being generated. The same string, however, will always produce the same hash.
+ As you can see, every string, even an empty one, produces its own unique hash. Modifying the string ever so slightly usually results in a totally different hash being generated. The same string, however, will always produce the same hash.
  
  Long story short, you should keep the following in mind:
  - Hashing is a one-way process. Secure hashing-algorithms can practically not be reversed.

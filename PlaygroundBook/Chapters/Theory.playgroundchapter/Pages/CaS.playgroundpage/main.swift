@@ -9,7 +9,7 @@
  Cryptology in Swift has a long, albeit sometimes complicated, history. Nowadays, Apple gives us through CryptoKit a handy and powerful framework to work with these kinds of things. On third party platforms, Swift offers "Crypto", an open-source implementation of CryptoKit that is based on BoringSSL, thereby creating API-compatibility.
  
  ## CommonCrypto
- Prior to CryptoKit, CommonCrypto was an ubiquitous tool. CommonCrypto, however, is a library written in C and thus sometimes uncomfortable. For this reason, there are many third-party wrappers around CommonCrypto intending to make CC "swiftier" - something that has now been accomplished first-partily through Crypto(Kit). Today, CommonCrypto is still often used directly when the usage of algorithms not supported by CryptoKit is required. For instance:
+ Prior to CryptoKit, CommonCrypto was an ubiquitous tool. CommonCrypto, however, is a library written in C and thus sometimes uncomfortable. For this reason, there are many third-party wrappers around CommonCrypto intending to make CC "swiftier" - something that has now been accomplished first-partily through Crypto(Kit). Today, CommonCrypto is often still used directly when the usage of algorithms not supported by CryptoKit is required. For instance:
  
  */
  
