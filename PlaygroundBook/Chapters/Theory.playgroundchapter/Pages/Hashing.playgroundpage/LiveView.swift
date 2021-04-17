@@ -170,7 +170,7 @@ struct Example : View {
             .fileImporter(isPresented: $isImporting, allowedContentTypes: [.text, .image, .archive, .application, .audio]) {
                 switch $0 {
                 case .success(let url):
-                    CFURLStartAccessingSecurityScopedResource(url as CFURL)
+                                        CFURLStartAccessingSecurityScopedResource(url as CFURL)
                     defer {
                         CFURLStopAccessingSecurityScopedResource(url as CFURL)
                     }

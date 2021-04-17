@@ -134,6 +134,7 @@ struct Example : View {
                 Image(systemName: "arrow.clockwise")
             }))
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
 }

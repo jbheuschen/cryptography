@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F55DBB5262B8A4B00C19DC4 /* cryptography.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F55DBB4262B8A4B00C19DC4 /* cryptography.png */; };
 		4FA26C14261CAC2500FCDD9A /* cfd-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA26C13261CAC2500FCDD9A /* cfd-preview.png */; };
 		4FA26C21261CACC700FCDD9A /* E2E.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA26C1F261CACC700FCDD9A /* E2E.swift */; };
 		4FA26C22261CACC700FCDD9A /* KeyExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA26C20261CACC700FCDD9A /* KeyExchange.swift */; };
@@ -132,6 +133,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4F55DBB4262B8A4B00C19DC4 /* cryptography.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cryptography.png; path = ../../../../cryptography.png; sourceTree = "<group>"; };
 		4FA26C13261CAC2500FCDD9A /* cfd-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cfd-preview.png"; sourceTree = "<group>"; };
 		4FA26C1F261CACC700FCDD9A /* E2E.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E2E.swift; sourceTree = "<group>"; };
 		4FA26C20261CACC700FCDD9A /* KeyExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyExchange.swift; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 		5EF2F9792054B64800191409 /* PrivateResources */ = {
 			isa = PBXGroup;
 			children = (
+				4F55DBB4262B8A4B00C19DC4 /* cryptography.png */,
 				4FA26C13261CAC2500FCDD9A /* cfd-preview.png */,
 				5EF2F97E2054B6E400191409 /* ManifestPlist.strings */,
 				5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */,
@@ -527,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA26C14261CAC2500FCDD9A /* cfd-preview.png in Resources */,
+				4F55DBB5262B8A4B00C19DC4 /* cryptography.png in Resources */,
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
 				5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
