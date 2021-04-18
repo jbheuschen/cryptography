@@ -4,6 +4,7 @@ import Foundation
 import CryptoKit
 import E2E
 
+//#-hidden-code
 enum E : Error {
     case generic(String)
 }
@@ -15,6 +16,7 @@ extension Data {
     }
     
 }
+//#-end-hidden-code
 
 /*:
  # Encrypting and Decrypting Data Symmetrically

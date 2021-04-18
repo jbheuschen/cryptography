@@ -1,8 +1,7 @@
 //: [Previous](@previous)
 
 /*:
- # Cryptology for Dummies
- ![Cryptology for Dummies](cfd.jpg)
+ # Cryptology for Newbies
  On the foregoing page I already gave a short definition of what Cryptology is. At this point, I'll get a bit more practical by limiting myself to the programmatic aspect of Cryptology - i.e., how can we utilize Cryptology in our projects?
  Well, the answer often is quite simple - most of us are already using it! It's something we often forget but for instance every HTTPS request we make is obviously being encrypted - which already leads us to the first way of utilizing Cryptography: encryption. With encryption comes decryption; hence, we already have our first principle complete.
  

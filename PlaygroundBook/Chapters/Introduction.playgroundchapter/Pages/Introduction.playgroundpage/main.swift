@@ -13,18 +13,18 @@
  # Table of Contents
  To make it official, here's how I'll structure my submission. In order to keep things clear, I will need to use some hidden files without explaining them. I will however put them in the resources folder, too, so that you can read through them if you'd like to.
  
- - Introduction
- - Theory: Cryptology for Dummies
- - Cryptology and Swift
- - Hashing
- - Signing
- - Symmetric Encryption
- - Asymmetric Encryption
- - Cryptography in Practice: End-to-end-encrypted Chat Application
-     - The Key Exchange
-     - Implementing the end-to-end-encryption
-     - The UI
- - Exercise
+ - [Introduction](Introduction/Introduction.playgroundpage)
+ - [Theory: Cryptology for Dummies](Theory/CfD.playgroundpage)
+ - [Cryptology and Swift](Theory/CaS.playgroundpage)
+ - [Hashing](Theory/Hashing.playgroundpage)
+ - [Signing](Theory/Signing.playgroundpage)
+ - [Symmetric Encryption](Theory/Symmetric.playgroundpage)
+ - [Asymmetric Encryption](Theory/Asymmetric.playgroundpage)
+ - [Cryptography in Practice: End-to-end-encrypted Chat Application](Practice/IntroChat.playgroundpage)
+     - [The Key Exchange](Practice/KeyExchange.playgroundpage)
+     - [Implementing the end-to-end-encryption](Practice/E2EImplementation.playgroundpage)
+     - [The UI](Practice/UI.playgroundpage)
+ - [Exercise](Practice/Exercise.playgroundpage)
  
  # Good to Know
  
