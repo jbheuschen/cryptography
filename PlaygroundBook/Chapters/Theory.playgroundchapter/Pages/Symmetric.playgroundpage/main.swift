@@ -59,22 +59,6 @@ func decrypt(ciphertext data: Data, using key: SymmetricKey) throws -> Data {
 
 /*:
  
- ## Try it
- 
- */
-
-let string = /*#-editable-code String to encrypt*/"Test"/*#-end-editable-code*/
-
-guard let encrypted = try? encrypt(data: string.data(using: .utf8)!, using: key) else { fatalError("Encryption failed.") }
-
-print(encrypted.asString())
-
-guard let decrypted = try? decrypt(ciphertext: encrypted, using: key) else { fatalError("Decryption failed.") }
-
-print(String(data: decrypted, encoding: .utf8)!)
-
-/*:
- 
  ## Example
  
  Using the live view on your right hand side, you can test the following example. In the upper text field, you can enter a key using which the text you enter in the second text field will be encrypted. You can then click the lock in the top-righthand corner to open the decryption routine. Here you just have to enter the key again and - voilà - the decryption should succeed.
@@ -82,7 +66,7 @@ print(String(data: decrypted, encoding: .utf8)!)
 
 import SwiftUI
 import PlaygroundSupport
-
+//#-editable-code
 extension String {
     
     func encrypt(using key: SymmetricKey) -> String {
@@ -94,7 +78,7 @@ extension String {
     }
     
 }
-
+//#-end-editable-code
 struct Example : View {
     
     @State var key: String = ""
