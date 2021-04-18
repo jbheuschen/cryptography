@@ -75,7 +75,7 @@ print(String(data: decrypted, encoding: .utf8)!)
  
  ## Example
  
- Using the live view on your right hand side, you can test the following example. In the upper text field, you can enter a key using which the text you enter in the second text field will be encrypted. You can then click the lock in the top-righthand corner to open the decryption routine. Here you just have to enter the key again and - voilà - the decryption should succeed.
+ Click run to use the interactive example.
  */
 
 import SwiftUI
@@ -179,5 +179,9 @@ struct DecryptionExample : View {
     }
     
 }
+
+//#-hidden-code
+PlaygroundPage.current.setLiveView(Example())
+//#-end-hidden-code
 
 //: [Next](@next)

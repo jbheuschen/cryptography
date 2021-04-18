@@ -6,11 +6,11 @@
 	<string>The Practice: Writing an E2EE-Chat-App</string>
 	<key>Pages</key>
 	<array>
-		<string>E2EImplementation.playgroundpage</string>
-		<string>Exercise.playgroundpage</string>
 		<string>IntroChat.playgroundpage</string>
 		<string>KeyExchange.playgroundpage</string>
+		<string>E2EImplementation.playgroundpage</string>
 		<string>UI.playgroundpage</string>
+		<string>Exercise.playgroundpage</string>
 	</array>
 </dict>
 </plist>

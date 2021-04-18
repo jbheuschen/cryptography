@@ -32,7 +32,7 @@
  ## Keep in mind: Mathematic solvability of underlying algorithmic problems
  Everything in Cryptography works through mathematics, specifically mathematic problems. Encryption, for instance, relies on the difficulty to solve certain mathematic problems and the resulting inability of both humans and computers to solve these problems in a reasonable amount of time. Therefore:
  - Theoretically, most cryptographic algorithms are solveable. We have to differentiate between mathematic theory and computer scientific practice, though - because in practice, they currently are not solveable (unless you have milleniums of time to spend on solving them).
- - The processing power of computers, however, evolves relatively quickly. By more powerful machines becoming available, the list of algorithms considered secure thus changes. Another interesting topic to keep in mind is quantum computers. In theory, they can solve many mathematic problems cryptographic algorithms rely on with not problems whatsoever. We'll see what them eventually becoming available in the future will mean for today's cryptographic world.
+ - The processing power of computers, however, evolves relatively quickly. By more powerful machines becoming available, the list of algorithms considered secure thus changes. Another interesting topic to keep in mind is quantum computers. In theory, they can solve many mathematic problems cryptographic algorithms rely on with no problems whatsoever. We'll see what them eventually becoming available in the future will mean for today's cryptographic world.
  
  */
 

@@ -2,6 +2,7 @@
 
 import Foundation
 import CryptoKit
+import E2E
 
 /*:
  # The End-to-End Implementation

@@ -47,10 +47,12 @@ class YourImplementation : ExerciseA {
 
 /*:
  # Trying your solution
- An error will be thrown if your solution does not work as expected.
+ An error will be thrown if your solution does not work as expected. Try replacing _YourImplementation_ with _Solution_ below to see the intended result.
  */
 
-typealias Implementation = Solution
+//#-editable-code
+typealias Implementation = YourImplementation
+//#-end-editable-code
 
 let impl = Implementation()
 let kPA = impl.generateKeypair(), kPB = impl.generateKeypair()

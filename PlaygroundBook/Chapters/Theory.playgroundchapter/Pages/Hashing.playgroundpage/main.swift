@@ -67,7 +67,7 @@ print(stringify(hash(s)))
 
 /*:
  ### Example
- By running this playground, you can try out an interactive tool for hashes. Tip: using the folder icon, you can try file hashing, too!
+ Using the live view to your right, you can try out an interactive tool for hashes. Tip: using the folder icon, you can try file-hashing, too!
  */
 
 import SwiftUI
@@ -214,9 +214,8 @@ extension Data : Identifiable {
  - Hashing is a one-way process. Secure hashing-algorithms can practically not be reversed.
  - A hash is unique to the original input data.
  - A hashing algorithm always produces a hash of the same lenght (e.g., SHA-512 => 512 bits).
+ 
+ Hashes are often used when generating a symmetric key from a variable input source. Moreover, hashes should be used when storing passwords.
  */
 
-//#-hidden-code
-PlaygroundPage.current.setLiveView(Example())
-//#-end-hidden-code
 //: [Next](@next)

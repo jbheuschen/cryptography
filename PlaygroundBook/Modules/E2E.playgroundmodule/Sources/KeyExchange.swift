@@ -64,7 +64,7 @@ public class KeyExchange {
 public class Participant {
     
     public static let all: [Participant] = {
-        [Participant["Bob"], Participant["Alice"], Participant["Eve"], Participant["Julia"]]
+        [Participant["Bob"], Participant["Alice"]]
     }()
     
     public static func all(without: Participant...) -> [Participant] {

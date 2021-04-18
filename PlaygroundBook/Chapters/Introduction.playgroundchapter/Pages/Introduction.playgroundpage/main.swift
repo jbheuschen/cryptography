@@ -37,6 +37,11 @@
  - https://en.wikipedia.org/wiki/Cryptography
  - https://archive.org/details/handbookofapplie0000mene/page/n9/mode/2up
  
+ Image sources:
+ 
+ - https://www.electronicdesign.com/technologies/embedded-revolution/article/21132412/maxim-integrated-cryptographic-implementations-hardware-vs-software
+ - https://www.livescience.com/38936-mathematics.html
+ 
  ## Frameworks
  
  Throughout this playground, I use the following Swift frameworks:

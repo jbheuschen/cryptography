@@ -116,12 +116,14 @@ struct Example : View {
                     .padding(.vertical)
                 if !text2.isEmpty {
                     TextField("", text: $text2)
+                        .foregroundColor(self.verification2 ? .green : .red)
                     HStack {
                         Text("Verification 2")
                             .bold()
                         Spacer()
                         Text(self.verification2 ? "Succeeded" : "Failed")
                             .italic()
+                        .foregroundColor(self.verification2 ? .green : .red)
                     }
                 }
                 Spacer()

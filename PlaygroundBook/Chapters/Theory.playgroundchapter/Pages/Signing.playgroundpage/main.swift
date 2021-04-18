@@ -116,12 +116,14 @@ struct Example : View {
                     .padding(.vertical)
                 if !text2.isEmpty {
                     TextField("", text: $text2)
+                        .foregroundColor(self.verification2 ? .green : .red)
                     HStack {
                         Text("Verification 2")
                             .bold()
                         Spacer()
                         Text(self.verification2 ? "Succeeded" : "Failed")
                             .italic()
+                            .foregroundColor(self.verification2 ? .green : .red)
                     }
                 }
                 Spacer()
@@ -138,5 +140,16 @@ struct Example : View {
     }
     
 }
+
+/*:
+ As above example might have shown you, signature verification fails once the message has been modified. If such a modification is made by an authorized party, they will resign the data and verification will succeed. Pretty useful, isn't it?
+ Keep in mind, however, that signing does not encrypt the data! It is often mistaken to do so as in many scenarios the data being signed itself is being encrypted beforehand.
+ 
+ # Where is signing used?
+ - Code Signing
+ - Electronic Signing of Documents / Forms (e.g., electronic contracts)
+ - Banking
+ - A lot more...
+ */
 
 //: [Next](@next)
