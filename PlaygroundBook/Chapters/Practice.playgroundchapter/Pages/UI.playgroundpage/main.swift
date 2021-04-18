@@ -9,7 +9,7 @@ import E2E
 let me = Participant["Bob"], me2 = Participant["Alice"]
 
 /*:
- # Our UI
+ # Last but not least: Our UI
  Our UI will be a simple SwiftUI layout. The screen will be divided into an upper and a lower half, both displaying an independent Chat App. These two will represent two different people and are connected to each other, so that we can use the upper one to chat with the lower one.
  */
 
@@ -110,7 +110,7 @@ extension String {
 /*:
  # In detail: How can we guarantee independence between the two distinct subapps?
  In order to enable communication between the two imaginary persons, both halfs are connected with each other so that you can use the upper one to chat with the lower one. Whereas in a real-world scenario we would communicate via a network, this is obviously not applicable in this case. However, all communication between the two is performed using the _NotificationCenter_, that is, there is no direct programmatic connection between the two.
- The _NotificationCenter_ therefore simulates the network connection - theoretically, everyone can receive everyone's messages, but they are encrypted...
+ The _NotificationCenter_ therefore simulates the network connection - theoretically, everyone can receive everyone's messages - but they are encrypted...
  
  # Finally...
  ... you can try the entire "app" we just coded using the live view on your right hand side. Admittedly, this app is very simple right now - but you can open the "Alice" chat in the upper window and the "Bob" chat in the bottom window and send messages between these two.

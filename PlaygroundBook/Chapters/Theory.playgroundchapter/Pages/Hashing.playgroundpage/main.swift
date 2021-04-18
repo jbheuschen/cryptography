@@ -57,15 +57,6 @@ func hash(file path: String) -> SHA512Digest {
  
  Checksums are a very important tools helping us to verify a file's integrity, for instance, after downloading it from the internet. Checksums' algorithms usually heavily rely on traditional hashing algorithms.
  
- ### Try it
- Enter a string you want to hash using the *SHA-512* algorithm. Then click run to see the result.
- */
-
-let s = /*#-editable-code A String to Hash*/""/*#-end-editable-code*/
-
-print(stringify(hash(s)))
-
-/*:
  ### Example
  Using the live view to your right, you can try out an interactive tool for hashes. Tip: using the folder icon, you can try file-hashing, too!
  */

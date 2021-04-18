@@ -74,7 +74,7 @@ func decryptMessage(encryptedMessage data: Data, myPrivateKey privateKey: Privat
 /*:
  ---
  ## Try it
- We'll use two seperate keypairs in order to simulate end-to-end encryption. Feel free to edit and play with the code!
+ We'll use two seperate keypairs in order to simulate end-to-end encryption. Feel free to edit and play with the code! Run the page to see the results in the inspector.
  */
 
 //#-editable-code

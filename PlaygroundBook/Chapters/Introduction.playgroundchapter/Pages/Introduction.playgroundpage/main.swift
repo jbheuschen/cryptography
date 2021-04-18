@@ -11,7 +11,7 @@
  I am aware that parts of this might be quite theoretical, given that Cryptography is such a complex topic. I nevertheless want to explain shortly the techniques we're using as well as give an overview over what Swift offers us developers. That is, I will not only explain the differences between the _Crypto_, _Security_, and _CommonCrypto_ frameworks, as well as their respective advantages or disadvantages, but also give practical examples for Cryptographic operations we can perform. In order to really get practical, I further implemented an end-to-end-encrypted chat application by the example of which I'll explain how straight-forward but powerful it actually is to use Cryptography in your Swift code. Finally, I wrote a short exercise by which you can test your practical knowledge on this topic.
  
  # Table of Contents
- To make it official, here's how I'll structure my submission. In order to keep things clear, I will need to use some hidden files without explaining them. I will however put them in the resources folder, too, so that you can read through them if you'd like to.
+ To make it official, here's how I structured my submission. In order to keep things clear, I used some hidden code without explaining it. I will however put it in the user module's _SharedCode_ file, too, so that you can read through it if you'd like to.
  
  - [Introduction](Introduction/Introduction.playgroundpage)
  - [Theory: Cryptology for Dummies](Theory/CfD.playgroundpage)
@@ -25,6 +25,9 @@
      - [Implementing the end-to-end-encryption](Practice/E2EImplementation.playgroundpage)
      - [The UI](Practice/UI.playgroundpage)
  - [Exercise](Practice/Exercise.playgroundpage)
+ 
+ **Note: If you already are a pro, you don't have to read through the entire theory. Just try the examples and go on ;)**
+ The final product can be found on [this](Practice/UI.playgroundpage) page.
  
  # Good to Know
  
@@ -53,6 +56,7 @@
  - CommonCrypto
  - Security
  - Combine
+ - UniformTypeIdentifiers
  - PlaygroundSupport
  
 [Next](@next)
